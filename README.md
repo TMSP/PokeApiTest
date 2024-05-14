@@ -1,6 +1,6 @@
 # Pokémon Battle Simulator
 
-Battle Simulator é uma pequena simulação comparando o HP entre 2 Pokémons a fim de definir um vencedor.
+Battle Simulator é uma pequena simulação em **.NET 8.0** comparando o HP entre 2 Pokémons a fim de definir um vencedor.
 O projeto utiliza [PokéAPI](https://pokeapi.co/) e um [.NET wrapper](https://github.com/PokeD/PokeAPI-NJ.NET) para abstrair e facilitar as chamadas para a API.
 
 ## Arquitetura do Projeto
@@ -41,5 +41,5 @@ Achei extremamente divertido fazer o parse de informações da PokéAPI! Eu pens
 mais status como ataque/defesa/tipo do pokémon porém senti que sairia muito do escopo do que foi pedido e que será avaliado, porém da maneira que foi feito (separando Pokémon via PokemonObj e BattleSimulator)
 é possível extender essas funcionalidades de maneira bem intuitiva, é possível ter a lista de habilidades do Pokémon e itens por exemplo, e na classe BattleSimulator temos como criar um loop onde tomamos turnos usando essas habilidades e criando lógicas de batalha.
 Única coisa que fiz "a mais" é imprimir na tela os status do Pokémon e seu tipo, mas apenas levando em conta o hp para definir o resultado.
-Um detalhe também é o carregamento das informações vindas da Api em PokeObj
+
 Obrigado!
