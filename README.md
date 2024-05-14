@@ -22,7 +22,7 @@ com campos como *Name* e *BaseValue*.
 O método **LoadPokemonFromApi(string pokemonName)** da minha classe é responsável por fazer a chamada à API e carregar as informações.
 Esse projeto foi criado como uma **Console Application** e as informações aparecem no terminal de console na hora da execução, por conta disso criei um método **DisplayPokemon()** para imprimir as informações do Pokémon de uma forma mais clara.
 
-A responsabilidade da classe PokémonObj é apenas representar um Pokémon, a comparação de hp entre 2 pokémons é feita na classe **BattleSImulator**.
+A responsabilidade da classe PokémonObj é apenas representar um Pokémon, a comparação de hp entre 2 pokémons é feita na classe **BattleSimulator**.
 
 ### Battle Simulator
 Essa classe é extremamente simples e consta com apenas 1 método **StartBattle(PokemonObj p1, PokemonObj p2)** onde é comparado o hp entre p1 e p2 e define um possível vencendor baseado **apenas** no hp.
@@ -31,6 +31,10 @@ Essa classe é extremamente simples e consta com apenas 1 método **StartBattle(
 Nesse projeto temos os testes unitários da classe PokémonObj, como fazemos chamadas para uma API Externa o método é encapsulado com uma exceção *HttpRequestException* então é testado
 uma chamada bem sucedida onde as informações são carregadas e uma com um nome errado que o método retorna 404.
 Como BattleSimulator é uma classe extremamente simples que usa e depende apenas de 2 objetos da classe testada sem adicionar integração ou funcionalidade não foi feito testes nela.
+
+### Execução
+Dentro de Program.cs está sendo instanciado dois PokemonObj passando o nome de 2 pokémons, são os 2 a serem simulados via BattleSimulator, os resultados e informações aparecem no console criado na execução!
+![PokeBattleExample](https://github.com/TMSP/PokeApiTest/assets/13991801/f65ba2b1-6108-4ee7-916f-94acfc9551ec)
 
 ### Considerações Finais
 Achei extremamente divertido fazer o parse de informações da PokéAPI! Eu pensei em fazer mais funcionalidades ou fazer um sistema de batalha levando em conta
